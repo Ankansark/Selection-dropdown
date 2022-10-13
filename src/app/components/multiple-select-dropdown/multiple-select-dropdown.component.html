@@ -1,0 +1,7 @@
+<ng-multiselect-dropdown *ngIf="dropdownMenu==true"
+  [settings]="dropdownSettings"
+  [data]="dropdownList" 
+  (onSelect)="onItemSelect($event)"
+  (onSelectAll)="onSelectAll($event)"
+  placeholder="SelectCity"
+>
