@@ -3,6 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 
 
@@ -23,7 +28,10 @@ import { SingleSelectDropdownComponent } from './components/single-select-dropdo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgMultiSelectDropDownModule
+    NgMultiSelectDropDownModule.forRoot(),
+    MatSelectModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

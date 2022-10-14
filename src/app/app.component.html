@@ -1,0 +1,26 @@
+
+
+
+
+
+<mat-form-field appearance="outline">
+    <mat-label>States</mat-label>
+    <mat-select [(value)]="selectedState">
+        <mat-option (click)="checkcity()" *ngFor="let state of stateList" value={{state}}>
+            {{state}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>
+
+
+
+
+
+<ng-multiselect-dropdown 
+  [settings]="dropdownSettings"
+  [data]="cityList" 
+  placeholder="SelectCity"
+  
+></ng-multiselect-dropdown>
+
+
